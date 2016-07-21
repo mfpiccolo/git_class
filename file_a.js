@@ -1,3 +1,5 @@
+'use strict'
+
 const path = require('path');
 const couponCode = require('coupon-code');
 const runAsync = require('../lib/run-async');
