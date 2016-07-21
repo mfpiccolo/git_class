@@ -65,7 +65,7 @@ function checkCode(code) {
     runAsync(function *getEntryCode() {
       var entry = yield Entry.where({voucher_number: code}).fetch({require: false});
       if (entry) {
-        debug('smog', `${code} is not unique and neither are you`);
+        debug('smog', `${code} is not unique, but you are unique!`);
         resolve(false);
       } else {
         debug('smog', `${code} is unique`);
