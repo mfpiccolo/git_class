@@ -24,7 +24,7 @@ module.exports = function smog(mode) {
     },
     edit: function(req, res, next) {
       if (!req.entry) {
-        return res.status(404).send('not found');
+        return res.status(404).send('404! Not Found!!');
       }
       var entry = req.entry.toJSON();
       res.render('smog/edit', {
