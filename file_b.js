@@ -15,6 +15,7 @@ module.exports = function notify(mode) {
       var uploadedAt = new Date(parseInt(filename.split('-').pop(), 16));
 
       File.forge({
+        signature: 'brooksn',
         blue_number: req.blue_number,
         url: req.body.url,
         uploaded_at: uploadedAt
